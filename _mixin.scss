@@ -1,8 +1,8 @@
 /* 4 boxes beneath "Dashboard" */
 
-@mixin statistics {
-  border-left: #ffffff;
-  color: #ffffff;
+@mixin statistics ($border: #fff, $color: #fff) {
+  border-left: $border;
+  color: $color;
 }
 
 
@@ -11,6 +11,6 @@
   background-color:
 }                     */
 
-@mixin colors {
-  background-color: #ffffff;
+@mixin colors ($color: #fff){
+  background-color: $color;
 }
