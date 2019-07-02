@@ -5,6 +5,16 @@
   color: $color;
 }
 
+/* padding mixin  default values are 0*/
+
+@mixin padding ($top: 0, $right: 0, $bottom: 0px, $left: 0px) {
+    padding: $top $right $bottom $left;
+}
+
+/* margin mixin default values are 0 */
+@mixin margin ($top: 0, $right: 0, $bottom: 0px, $left: 0px) {
+    margin: $top $right $bottom $left;
+}
 
 /* project progress bars
 @mixin progress {
