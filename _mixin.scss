@@ -11,6 +11,6 @@
   background-color:
 }                     */
 
-@mixin colors ($color: #fff){
-  background-color: $color;
+@mixin colors ($bgcolor: #fff){
+  background-color: $bgcolor;
 }
