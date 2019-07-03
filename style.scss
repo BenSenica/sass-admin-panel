@@ -45,20 +45,51 @@
         @include margin ($top: 10px, $left: 17px);
         .components-link{
             @extend %links;
-            color: darken($white, 20%);
-            &:hover {
-                color: $white;
-            }
+            
         }
-            .collapsing-components {
-                @include collapse;
-                component-header{
-                    color: red;
-                }
-            }
+        .collapse-components {
+             @include collapse;
+            
+        }
+    }
+    .utilities {
+        @extend %sidebar;
+        
+        .utilitie-link {
+            @extend %links;
+        }
+        .utility-style {
+            @include collapse;
+        }
+    }
+    .addon-header {
+        @include margin ($top: 20px, $left: 20px);
+    }
+    .pages {
+       @include margin ($top: 10px, $left: 17px); 
+        .pages-link {
+            @extend %links;
+        }
+        .page-style {
+            @include collapse;
+        }
+    }
+    .charts{
+         @include margin ($top: 20px, $left: 20px);
+        .charts-link {
+            @extend %links;
+        }
+    }
+    .tables {
+         @include margin ($top: 20px, $left: 20px);
+        .tables-link {
+            @extend %links;
+        }
     }
     
+    
 }
+
 .topnav {
     grid-area: navbar;
 }

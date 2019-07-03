@@ -18,5 +18,9 @@
 %links {
     text-decoration: none;
     color: $background;
+    color: darken($white, 20%);
+            &:hover {
+                color: $white;
+            }
 }
 

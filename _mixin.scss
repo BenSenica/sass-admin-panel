@@ -31,4 +31,24 @@
     background-color: $white;
     border-radius: 5px;
     @include margin ($right: 20px);
+    h6 {
+        color: grey;
+        @include margin ($left: 20px);
+        @include padding ($top: 10px, $bottom: 10px);
+    }
+    .collapse-item {
+        @include collapse-items;
+    }
+}
+
+@mixin collapse-items {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    @include margin($left: 15px, $right: 20px, $bottom: 10px);
+    @include padding ($top: 10px, $left: 5px, $bottom: 10px);
+    &:hover{
+        background-color: grey;
+        border-radius: 5px;
+    }
 }

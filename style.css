@@ -310,14 +310,17 @@ template {
 @mixin progress {
   background-color:
 }                     */
-.sidebar .link-sb, .sidebar .dashboard {
+.sidebar .link-sb, .sidebar .dashboard, .sidebar .utilities {
   padding: 20px 0 20px 10px;
   margin: 0 20px 0px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
 
-.sidebar .link-sb, .sidebar .dashboard .dashboard-link, .sidebar .components .components-link {
+.sidebar .link-sb, .sidebar .dashboard .dashboard-link, .sidebar .components .components-link, .sidebar .utilities .utilitie-link, .sidebar .pages .pages-link, .sidebar .charts .charts-link, .sidebar .tables .tables-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.4); }
+  color: rgba(255, 255, 255, 0.4);
+  color: #cccccc; }
+  .sidebar .link-sb:hover, .sidebar .dashboard .dashboard-link:hover, .sidebar .components .components-link:hover, .sidebar .utilities .utilitie-link:hover, .sidebar .pages .pages-link:hover, .sidebar .charts .charts-link:hover, .sidebar .tables .tables-link:hover {
+    color: #fff; }
 
 /* 4 boxes beneath "Dashboard" */
 /* padding mixin  default values are 0*/
@@ -352,16 +355,65 @@ template {
     margin: 20px 0 0px 20px; }
   .sidebar .components {
     margin: 10px 0 0px 17px; }
-    .sidebar .components .components-link {
-      color: #cccccc; }
-      .sidebar .components .components-link:hover {
-        color: #fff; }
-    .sidebar .components .collapsing-components {
+    .sidebar .components .collapse-components {
       background-color: #fff;
       border-radius: 5px;
       margin: 0 20px 0px 0px; }
-      .sidebar .components .collapsing-components component-header {
-        color: red; }
+      .sidebar .components .collapse-components h6 {
+        color: grey;
+        margin: 0 0 0px 20px;
+        padding: 10px 0 10px 0px; }
+      .sidebar .components .collapse-components .collapse-item {
+        display: flex;
+        color: #000;
+        text-decoration: none;
+        margin: 0 20px 10px 15px;
+        padding: 10px 0 10px 5px; }
+        .sidebar .components .collapse-components .collapse-item:hover {
+          background-color: grey;
+          border-radius: 5px; }
+  .sidebar .utilities .utility-style {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 20px 0px 0px; }
+    .sidebar .utilities .utility-style h6 {
+      color: grey;
+      margin: 0 0 0px 20px;
+      padding: 10px 0 10px 0px; }
+    .sidebar .utilities .utility-style .collapse-item {
+      display: flex;
+      color: #000;
+      text-decoration: none;
+      margin: 0 20px 10px 15px;
+      padding: 10px 0 10px 5px; }
+      .sidebar .utilities .utility-style .collapse-item:hover {
+        background-color: grey;
+        border-radius: 5px; }
+  .sidebar .addon-header {
+    margin: 20px 0 0px 20px; }
+  .sidebar .pages {
+    margin: 10px 0 0px 17px; }
+    .sidebar .pages .page-style {
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 0 20px 0px 0px; }
+      .sidebar .pages .page-style h6 {
+        color: grey;
+        margin: 0 0 0px 20px;
+        padding: 10px 0 10px 0px; }
+      .sidebar .pages .page-style .collapse-item {
+        display: flex;
+        color: #000;
+        text-decoration: none;
+        margin: 0 20px 10px 15px;
+        padding: 10px 0 10px 5px; }
+        .sidebar .pages .page-style .collapse-item:hover {
+          background-color: grey;
+          border-radius: 5px; }
+  .sidebar .charts {
+    margin: 20px 0 0px 20px; }
+  .sidebar .tables {
+    margin: 20px 0 0px 20px; }
 
 .topnav {
   grid-area: navbar; }
