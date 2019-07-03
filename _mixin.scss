@@ -26,3 +26,9 @@
   background-color: $bgcolor;
 
 }
+
+@mixin collapse {
+    background-color: $white;
+    border-radius: 5px;
+    @include margin ($right: 20px);
+}

@@ -303,4 +303,70 @@ template {
 [hidden] {
   display: none; }
 
+/* 4 boxes beneath "Dashboard" */
+/* padding mixin  default values are 0*/
+/* margin mixin default values are 0 */
+/* project progress bars
+@mixin progress {
+  background-color:
+}                     */
+.sidebar .link-sb, .sidebar .dashboard {
+  padding: 20px 0 20px 10px;
+  margin: 0 20px 0px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+
+.sidebar .link-sb, .sidebar .dashboard .dashboard-link, .sidebar .components .components-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4); }
+
+/* 4 boxes beneath "Dashboard" */
+/* padding mixin  default values are 0*/
+/* margin mixin default values are 0 */
+/* project progress bars
+@mixin progress {
+  background-color:
+}                     */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "sidebar navbar" "sidebar content"; }
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #4e73df;
+  color: rgba(255, 255, 255, 0.4);
+  list-style: none; }
+  .sidebar .link-sb {
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sidebar .link-sb .fa-laugh-wink {
+      font-size: 38px;
+      transform: rotate(-20deg);
+      padding: 0 20px 0px 0px; }
+  .sidebar .dashboard .dashboard-link {
+    color: #fff; }
+  .sidebar .sidebar-header {
+    margin: 20px 0 0px 20px; }
+  .sidebar .components {
+    margin: 10px 0 0px 17px; }
+    .sidebar .components .components-link {
+      color: #cccccc; }
+      .sidebar .components .components-link:hover {
+        color: #fff; }
+    .sidebar .components .collapsing-components {
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 0 20px 0px 0px; }
+      .sidebar .components .collapsing-components component-header {
+        color: red; }
+
+.topnav {
+  grid-area: navbar; }
+
+.main-container {
+  grid-area: content; }
+
 /*# sourceMappingURL=style.css.map */

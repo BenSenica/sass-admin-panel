@@ -1,4 +1,22 @@
+@import "mixin";
 %button-basic {
     background-color: $primary;
     color: #fff;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    &:hover {
+        background-color: darken($primary, 5%);
+    }
 }
+
+%sidebar {
+    @include padding ($top: 20px, $left: 10px, $bottom: 20px);
+    @include margin ($left: 20px, $right: 20px);
+    border-bottom: 1px solid $background;
+}
+
+%links {
+    text-decoration: none;
+    color: $background;
+}
+
